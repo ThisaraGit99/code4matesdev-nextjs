@@ -18,10 +18,16 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./",  // This is important
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]  // Adjust paths to reflect the src folder structure
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
